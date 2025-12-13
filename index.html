@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brume | French Café</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <div class="container nav-wrapper">
+            <a href="#" class="nav-logo">Brume.</a>
+            <div class="nav-links" data-visible="false">
+                <a href="#about">About</a>
+                <a href="#menu">Menu</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">Visit</a>
+            </div>
+            <div class="menu-sandwich" aria-controls="main-nav" aria-expanded="false">
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero">
+        <div class="container hero-content reveal">
+            <span class="hero-sub">Est. 2024 &mdash; Iloilo</span>
+            <h1>Coffee for the <span class="italic">quiet moments</span> of your day.</h1>
+            <a href="#menu" class="btn">View Menu</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container about-grid">
+            <div class="about-text reveal">
+                <h2>Our <span class="italic">Philosophy</span></h2>
+                <p>Brume was born from a desire to slow down. In a city that never stops, we wanted to create a sanctuary of silence and scent. We source our beans from sustainable farms and roast them with patience.</p>
+                <br>
+                <p>We believe that a cup of coffee is not just fuel, but a ritual. A moment to pause, to reflect, and to breathe.</p>
+            </div>
+            <div class="about-img reveal">
+                <img src="images/person-pouring-milk-in-latte.jpg" alt="Person pouring milk on latte">
+            </div>
+        </div>
+    </section>
+
+    <section id="menu">
+        <div class="container">
+            <div class="reveal" style="text-align: center; margin-bottom: 4rem;">
+                <h2>The <span class="italic">Menu</span></h2>
+            </div>
+            
+            <div class="menu-grid reveal">
+                <div class="menu-category">
+                    <h3>Coffee</h3>
+                    <div class="menu-item"><span>Espresso</span> <span class="price">₱90</span></div>
+                    <div class="menu-item"><span>Cortado</span> <span class="price">₱150</span></div>
+                    <div class="menu-item"><span>Flat White</span> <span class="price">₱150</span></div>
+                    <div class="menu-item"><span>Filter / Drip</span> <span class="price">₱100</span></div>
+                    <div class="menu-item"><span>Cold Brew</span> <span class="price">₱130</span></div>
+                </div>
+
+                <div class="menu-category">
+                    <h3>Bakery</h3>
+                    <div class="menu-item"><span>Croissant</span> <span class="price">₱60</span></div>
+                    <div class="menu-item"><span>Pain au Chocolat</span> <span class="price">₱90</span></div>
+                    <div class="menu-item"><span>Almond Tart</span> <span class="price">₱90</span></div>
+                    <div class="menu-item"><span>Sourdough Toast</span> <span class="price">₱120</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <div class="container">
+            <div class="gallery-grid">
+                <div class="gallery-item reveal">
+                    <img src="images/cafe-interior-chairs-table.jpg" alt="Cafe interior with chairs and a table">
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="images/pain-au-chocolat.jpg" alt="Pain au chocolat">
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="images/a-cup-of-green-tea-with-a-leaf-on-it.jpg" alt="Cup of green tea with a leaf design on it">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container contact-wrapper reveal">
+            <h2>Visit <span class="italic">Us</span></h2>
+            <p>We are open daily for the early risers and the late readers.</p>
+            
+            <div class="contact-info">
+                <p>123 Paris St., Maginhawa Village, PH</p>
+                <p>hello@brume.cafe</p>
+                <p>07:00 — 19:00</p>
+            </div>
+
+            <a href="mailto:hello@brume.cafe" class="btn">Say Bonjour</a>
+        </div>
+    </section>
+
+    <footer>
+        <h4 class="nav-logo">Brume.</h4>
+        <p>&copy; 2024 Brume Café. Designed for Portfolio.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
