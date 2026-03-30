@@ -1,117 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brume | French Café</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brume Café</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="output.css" />
 </head>
-<body>
+<body class="max-w-5xl mx-auto bg-cream font-body text-dark-blue">
 
-    <nav>
-        <div class="container nav-wrapper">
-            <a href="#" class="nav-logo">Brume.</a>
-            <div class="nav-links" data-visible="false">
-                <a href="#about">About</a>
-                <a href="#menu">Menu</a>
-                <a href="#gallery">Gallery</a>
-                <a href="#contact">Visit</a>
+  <nav class="sticky top-0 z-50 flex justify-center items-center gap-4 pt-4">
+    <a href="#" class="bg-dark-blue text-cream font-display font-bold text-xl italic px-6 py-2 rounded-full">
+        Brume.
+    </a>
+
+    <div class="bg-dark-blue text-cream font-body text-sm px-6 py-3 rounded-full flex gap-6">
+        <a href="#menu" class="hover:text-light-blue transition-colors duration-300">menu</a>
+        <a href="#about" class="hover:text-light-blue transition-colors duration-300">about</a>
+        <a href="#contact" class="hover:text-light-blue transition-colors duration-300">contact</a>
+    </div>
+   </nav>
+
+  <header id="hero" class="relative flex flex-col items-center justify-center h-screen px-16" style="height: calc(100vh - 72px);">
+    <div class="reveal text-center z-10">
+        <p class="font-body text-xs tracking-widest text-dark-blue/60 mb-4">EST. 2024</p>
+        <h1 class="font-display text-5xl md:text-6xl leading-tight mb-8">
+            Coffee for the <em>quiet</em><br><em>moments</em> of your day.
+        </h1>
+        <a href="#menu" class="border border-dark-blue text-dark-blue font-body text-xs tracking-widest px-8 py-3 rounded-full hover:bg-dark-blue hover:text-cream transition-all duration-300">
+            VIEW MENU
+        </a>
+    </div>
+
+    <img src="images/moka-pot.svg" alt="Moka Pot" class="reveal md:hidden block absolute left-5 bottom-36 w-20">
+    <img src="images/coffee-mug.svg" alt="Coffee Mug" class="reveal md:hidden block absolute right-5 bottom-44 w-22">
+
+    <img src="images/moka-pot.svg" alt="Moka Pot" class="reveal hidden md:block absolute left-26 bottom-44 w-30">
+    <img src="images/coffee-mug.svg" alt="Coffee Mug" class="reveal hidden md:block absolute right-26 bottom-44 w-44">
+    <img src="images/hero-about-divider.svg" alt="" class="hidden md:block absolute bottom-26 w-full px-10">
+
+  </header>
+
+  <section id="about" class="py-24 px-16 relative">
+    <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-16">
+
+
+      <div class="flex-1">
+        <h2 class="reveal font-display text-5xl mb-8">Our <em>Philosophy</em></h2>
+        <p class="reveal font-body text-sm leading-relaxed text-dark-blue/80 mb-4">
+          Brume was born from a desire to slow down. In a city that never stops, we wanted to create a sanctuary of silence and scent. We source our beans from sustainable farms and roast them with patience.
+        </p>
+        <p class="reveal font-body text-sm leading-relaxed text-dark-blue/80">
+          We believe that a cup of coffee is not just fuel, but a ritual. A moment to pause, to reflect, and to breathe.
+        </p>
+      </div>
+
+      <img src="images/coffee-maker.svg" alt="Coffee Maker" class=" w-32 md:w-48 shrink-0">
+    </div>
+  </section>
+
+  <section id="menu" class="py-24 px-16">
+    <div class="max-w-5xl mx-auto">
+    
+      <h2 class="reveal font-display text-5xl text-center mb-12">Our <em>Menu</em></h2>
+      <div class="reveal grid grid-cols-1 md:grid-cols-2 gap-16">
+        <div>
+          <span class="bg-medium-blue text-cream font-body text-sm px-5 py-2 rounded-full inline-block mb-6">Coffees</span>
+          <div class="space-y-4">
+            <div class="flex justify-between font-body text-sm">
+              <span>Espresso</span><span>₱90</span>
             </div>
-            <div class="menu-sandwich" aria-controls="main-nav" aria-expanded="false">
-                <div class="line"></div>
-                <div class="line"></div>
+            <div class="flex justify-between font-body text-sm">
+              <span>Cortado</span><span>₱150</span>
             </div>
+            <div class="flex justify-between font-body text-sm">
+              <span>Flat White</span><span>₱150</span>
+            </div>
+            <div class="flex justify-between font-body text-sm">
+              <span>Filter/Drip</span><span>₱100</span>
+            </div>
+            <div class="flex justify-between font-body text-sm">
+              <span>Cold Brew</span><span>₱130</span>
+            </div>
+          </div>
         </div>
-    </nav>
 
-    <section id="hero">
-        <div class="container hero-content reveal">
-            <span class="hero-sub">Est. 2024 &mdash; Iloilo</span>
-            <h1>Coffee for the <span class="italic">quiet moments</span> of your day.</h1>
-            <a href="#menu" class="btn">View Menu</a>
+        <div>
+          <span class="bg-medium-blue text-cream font-body text-sm px-5 py-2 rounded-full inline-block mb-6">Pastries</span>
+          <div class="space-y-4">
+            <div class="flex justify-between font-body text-sm">
+              <span>Croissant</span><span>₱60</span>
+            </div>
+            <div class="flex justify-between font-body text-sm">
+              <span>Pain au Chocolat</span><span>₱90</span>
+            </div>
+            <div class="flex justify-between font-body text-sm">
+              <span>Almond Tart</span><span>₱90</span>
+            </div>
+            <div class="flex justify-between font-body text-sm">
+              <span>Sourdough Toast</span><span>₱120</span>
+            </div>
+          </div>
         </div>
-    </section>
+      </div>
+      <img src="images/portafilter.svg" alt="" class="w-36 mt-12">
 
-    <section id="about">
-        <div class="container about-grid">
-            <div class="about-text reveal">
-                <h2>Our <span class="italic">Philosophy</span></h2>
-                <p>Brume was born from a desire to slow down. In a city that never stops, we wanted to create a sanctuary of silence and scent. We source our beans from sustainable farms and roast them with patience.</p>
-                <br>
-                <p>We believe that a cup of coffee is not just fuel, but a ritual. A moment to pause, to reflect, and to breathe.</p>
-            </div>
-            <div class="about-img reveal">
-                <img src="images/person-pouring-milk-in-latte.jpg" alt="Person pouring milk on latte">
-            </div>
-        </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="menu">
-        <div class="container">
-            <div class="reveal" style="text-align: center; margin-bottom: 4rem;">
-                <h2>The <span class="italic">Menu</span></h2>
-            </div>
-            
-            <div class="menu-grid reveal">
-                <div class="menu-category">
-                    <h3>Coffee</h3>
-                    <div class="menu-item"><span>Espresso</span> <span class="price">₱90</span></div>
-                    <div class="menu-item"><span>Cortado</span> <span class="price">₱150</span></div>
-                    <div class="menu-item"><span>Flat White</span> <span class="price">₱150</span></div>
-                    <div class="menu-item"><span>Filter / Drip</span> <span class="price">₱100</span></div>
-                    <div class="menu-item"><span>Cold Brew</span> <span class="price">₱130</span></div>
-                </div>
+  <section id="contact" class="py-24 px-16">
+    <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
+    
+      <div>
+        <h2 class="reveal font-display text-5xl mb-4">Contact <em>Us</em></h2>
+        <p class="reveal font-body text-sm text-dark-blue/70 mb-2">We are open daily for the early risers and the late readers.</p>
+        <p class="reveal font-body text-sm text-dark-blue/70 mb-8">123 Nemo St., Maginhawa Village, Philippines</p>
+        <a href="#contact" class="border border-dark-blue text-dark-blue font-body text-xs tracking-widest px-8 py-3 rounded-full hover:bg-dark-blue hover:text-cream transition-all duration-300">
+          MESSAGE US
+        </a>
+      </div>
+      <img src="images/coffee-cup.svg" alt="Coffee Cup" class="reveal w-32 md:w-40 shrink-0 self-end md:self-auto">
+    </div>
+  </section>
 
-                <div class="menu-category">
-                    <h3>Bakery</h3>
-                    <div class="menu-item"><span>Croissant</span> <span class="price">₱60</span></div>
-                    <div class="menu-item"><span>Pain au Chocolat</span> <span class="price">₱90</span></div>
-                    <div class="menu-item"><span>Almond Tart</span> <span class="price">₱90</span></div>
-                    <div class="menu-item"><span>Sourdough Toast</span> <span class="price">₱120</span></div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <footer class="border-t border-dark-blue/20">
+    <div class="max-w-5xl mx-auto px-16 py-6 flex justify-between items-center">
+      <span class="font-body text-xs text-dark-blue/50">© 2026</span>
+      <span class="font-body text-xs text-dark-blue/50">Designed by 
+        <a href="https:/cliffordportfolio.vercel.app" target="_blank" class="underline">Clifford</a> | 
+        <a href="https://backspace-studio.vercel.app" target="_blank" class="underline">Backspace Studio</a></span>
+    </div>
+    <div class="px-16 pb-8">
+      <p class="font-display text-8xl md:text-9xl font-bold italic text-dark-blue">Brume.</p>
+    </div>
+  </footer>
 
-    <section id="gallery">
-        <div class="container">
-            <div class="gallery-grid">
-                <div class="gallery-item reveal">
-                    <img src="images/cafe-interior-chairs-table.jpg" alt="Cafe interior with chairs and a table">
-                </div>
-                <div class="gallery-item reveal">
-                    <img src="images/pain-au-chocolat.jpg" alt="Pain au chocolat">
-                </div>
-                <div class="gallery-item reveal">
-                    <img src="images/a-cup-of-green-tea-with-a-leaf-on-it.jpg" alt="Cup of green tea with a leaf design on it">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact">
-        <div class="container contact-wrapper reveal">
-            <h2>Visit <span class="italic">Us</span></h2>
-            <p>We are open daily for the early risers and the late readers.</p>
-            
-            <div class="contact-info">
-                <p>123 Paris St., Maginhawa Village, PH</p>
-                <p>hello@brume.cafe</p>
-                <p>07:00 — 19:00</p>
-            </div>
-
-            <a href="mailto:hello@brume.cafe" class="btn">Say Bonjour</a>
-        </div>
-    </section>
-
-    <footer>
-        <h4 class="nav-logo">Brume.</h4>
-        <p>&copy; 2024 Brume Café. Designed for Portfolio.</p>
-    </footer>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
